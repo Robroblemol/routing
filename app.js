@@ -12,7 +12,7 @@ app.get("/",function(req,res) {
 app.post("/",function (req,res) {
   res.render("form");
 });
-app.get("/algo",function (res,req) {
+app.get("/algo",function (req,res) {
     res.render("form");
 });
 
