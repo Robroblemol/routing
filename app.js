@@ -15,5 +15,9 @@ app.post("/",function (req,res) {
 app.get("/algo",function (req,res) {
     res.render("form");
 });
+app.get("/:nombre",function (req,res) {// pasar datos desde la vista
+    console.log(req.params.nombre);
+    res.render("form",{nombre:req.params.nombre});
+});
 
 app.listen(8080);// escuchamos peticiones
